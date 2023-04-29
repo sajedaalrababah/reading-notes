@@ -1,5 +1,7 @@
 # **Reading-notes**
 ## *My web site*
+This website is a README NOTES to store information about many readings and summrization about several topics.
+
 ## Code 102 - Intro to Software Development
 ## Code 201 - Foundations of Software Development
 ## Code 301 - Intermediate Software Development
