@@ -1,53 +1,40 @@
-## The Command Line :
-- A command line, or terminal, is a text based interface to the system presents you with a prompt
-- "bash" stand for Bourne again shell one of the most common shells that defines how terminal will look after exeuting
-## Basic Navigation
-- **pwd** is an abbreviation for Print Working Directory and refers to our current working address
-- **ls** is an abbreviation for list and it tells us what is in our current location
-- **Absolute paths** specify a location (file or directory) in relation to the root directory
-- **Relative paths** specify a location (file or directory) in relation to where we currently are in the system
-- **~(tilde)** a shortcut for your home directory
-- **. (dot)** a reference to your current directory.
-- **.. (dotdot)** a reference to the parent directory
-- **cd** is an abbreviation for change directory and it takes [location] argument
-## A bout Files :
-- we can say that almost everything is a file include text , keyboard and monitor
-- **file [path]** to find the type of the file like :
-  - file.exe - an executable file, or program
-  - file.txt - a plain text file
-  - file.png, file.gif, file.jpg - an image
-- **ls -a or --all** to list the contents of a directory, including hidden files
-- To skip space issues in directories or files names we can use one of the following teqniuqes:
-
-  **1. Quotes :** using quotes around the entire item like **'student profile'**
-
-  **2. Escape Characters :** using backslash ( \ ) like **student \ profile**
-
-  **3. Tab comletion :** that will encounter the space in the directory name then the terminal will automatically escape any spaces in the name
-
-## Manual Pages :
-- **man [command to look up]** it will give me all details about the command I am looking for also how to use it
-- **man -k [search term]** to search in manual pages about what command you may want to use 
--  long hand command line options begin with two dashes ( -- ) and short hand options begin with a single dash ( - )
-
-## File Manipulation :
-- **mkdir [options] [Directory]** is an abbreviation for make a directory which end with Creating a directory with the name I choose
-
-  - Options that used with mkdir command:
-  
-    **1) -p** which tells mkdir to make parent directories as needed
-
-    **2) -v** print a message for each created directory
-- **rmdir [options] [Directory]** is an abbreviation for remove directory (a directory must be empty before) also it supports the -v and -p options
-- **touch [options] [filename]** Update the access and modification times of each FILE to the current time and it will create a blank file if doesn't exist
-- **cp [options] [source] [destination]** to make a duplicate of a file or directory 
-  - **-r option** stands for recursive and it alow me to duplicate multiple directories
-
-- **mv [options] [source] [destination]** move (rename) files and directories
-
-- **rm [options] [file]** which stands for remove thats mean remove file or directory and that's work with empty and non empty directories
-  - **-r option** it allows us to remove directories and all files and directories contained within
-  - **-i option** will prompt you before removing each file and directory and give you the option to cancel the command
+# **Terminal** :
+### **1. Command Line :**
+### A command line, or terminal, is a text based interface to the system. You are able to enter commands by typing them on the keyboard and feedback will be given to you similarly as text.
 
 
+### **2. Basic Navigation  :**
+### In this section, we'll learn the basics of moving around the system. Many tasks rely on being able to get to, or reference the correct location in the system
+- pwd    ---> Print Working Directory. 
+- ls     ---> Current Location. 
+- ls -l  ---> It shows me the number of files in the home directory and the number of all files in the home file.
+- Paths : is a means to get to a particular file or directory on the system. There is two type of paths:
 
+
+ 1. Absolute paths:  specify a location (file or directory) in relation to the root directory. You can identify them easily as they always begin with a forward slash ( / ) .
+
+ 2. Relative paths:  specify a location (file or directory) in relation to where we currently are in the system. They will not begin with a slash.
+
+ - change directory(cd) : it use to open a directory and we can go back by use cd without arguments .
+
+ ### **3. More About Files  :**
+ - Linux is an Extensionless System : When create a file Must Specify the file extension.
+ - Linux is Case Sensitive.
+ - Spaces in names :  Spaces in file and directory names are perfectly valid but we need using quotes around the entire item.
+
+
+ ### **4. Manual Pages  :**
+ ### The manual pages are a set of pages that explain every command available on your system including what they do.
+
+ - man command : The manual pages are a set of pages that explain every command available on your system including what they do, the specifics of how you run them and what command line arguments they accept.
+ - man -k search term : Do a keyword search for all manual pages containing the given search term.
+- /term : Within a manual page, perform a search for 'term'.
+- n : After performing a search within a manual page, select the next found item.
+
+ ### **5. File Manipulation  :**
+- mkdir: Make Directory - ie. Create a directory.
+- rmdir : Remove Directory - ie. Delete a directory.
+- touch : Create a blank file.
+- cp : Copy - ie. Copy a file or directory.
+- mv : Move - ie. Move a file or directory (can also be used to rename).
+- rm : Remove - ie. Delete a file.
