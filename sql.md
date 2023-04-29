@@ -1,4 +1,4 @@
-QL, or Structured Query Language, is a language designed to allow both technical and non-technical users query, manipulate, and transform data from a relational database. And due to its simplicity, SQL databases provide safe and scalable storage for millions of websites and mobile applications. SQL Commands - An overview of the various SQL commands used to interact with databases, such as SELECT, INSERT, UPDATE, and DELETE.
+sQL, or Structured Query Language, is a language designed to allow both technical and non-technical users query, manipulate, and transform data from a relational database. And due to its simplicity, SQL databases provide safe and scalable storage for millions of websites and mobile applications. SQL Commands - An overview of the various SQL commands used to interact with databases, such as SELECT, INSERT, UPDATE, and DELETE.
 
 The SELECT Statement - A more detailed look at the SELECT statement, which is used to retrieve data from a database.
 
