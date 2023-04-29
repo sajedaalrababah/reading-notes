@@ -8,5 +8,5 @@
 |Introduction  |Summary |
 | ------------- | ------------- |
 | sql | [Practice in the SQL ](./sql.md) |
-| Terminal  | [Practice in the Terminal](./terminal.md)  |
+| Terminal  | [Practice in the Terminal](./Terminal.md)  |
 | Growth_Mindset  | [Growth_Mindset ](./Growth_Mindset.md)  |
