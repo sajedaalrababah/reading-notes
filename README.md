@@ -7,6 +7,6 @@
 
 |Introduction  |Summary |
 | ------------- | ------------- |
-| sql | Content Cell  |
-| Terminal  | Content Cell  |
-| Growth_Mindset  | Content Cell  |
+| sql | [Practice in the SQL ](./sql.md) |
+| Terminal  | [Practice in the Terminal](./terminal.md)  |
+| Growth_Mindset  | [Growth_Mindset ](./Growth_Mindset.md)  |
