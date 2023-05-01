@@ -14,4 +14,4 @@ This website is a README NOTES to store information about many readings and summ
 | Growth_Mindset  | [Growth_Mindset ](./Growth_Mindset.md)  |
 |class1  | [class1](./class1.md)  |
 |Engineering-Readings | [Engineering-Readings](./Engineering-Readings.md)  |
-|data_structure.md | [data_structure](./Engineering-Readings.md)  |
+|data_structure | [data_structure](./data_structure.md)  |
