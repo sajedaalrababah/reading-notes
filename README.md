@@ -15,5 +15,5 @@ This website is a README NOTES to store information about many readings and summ
 |class1  | [class1](./class1.md)  |
 |Engineering-Readings | [Engineering-Readings](./Engineering-Readings.md)  |
 |data_structure | [data_structure](./data_structure.md)  |
-|claa02 | [class02](./class02.md)  |
-|claa03 | [class03](./class-03.md)  |
+|class02 | [class02](./class02.md)  |
+|class03 | [class03](./class-03.md)  |
