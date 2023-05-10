@@ -36,41 +36,7 @@ Each data structure contains two items: the data and a reference (in other words
 | Insertion | O(n)  | O(1)        |
 | Deletion  | O(n)  | O(1)        |
 
-## example
 
-```python
-class Node:
-    def __init__(self, data=None, next : Union['Node',None] = None):
-        self.data = data
-        self.next = next
-    
-class LinkedList:
-    def __init__(self):
-        self.head : Union[Node,None] = None
-        
-    def insert_at_beginning(self, data):
-        node = Node(data, self.head)
-        self.head = node
-    
-    def get_nth_node(self, n):
-        temp = self.head
-        for _ in range(n):
-            if temp is None:
-                return None
-            temp = temp.next
-        return temp
-
-    def print(self):
-        if self.head is None:
-            print('Linked list is empty')
-            return
-        itr = self.head
-        llstr = ''
-        while itr:
-            llstr += str(itr.data) + '-->'
-            itr = itr.next
-        print(llstr)
-```
 
 ## Some definitions
 
