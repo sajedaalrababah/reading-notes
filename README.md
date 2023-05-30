@@ -20,3 +20,9 @@ This website is a README NOTES to store information about many readings and summ
 |class04 | [class04](./class04.md)  |
 |class05 | [class05](./class05.md)  |
 |class06 | [class06](./class06.md)  |
+|class07 | [class07](./class07.md)  |
+|class08 | [class08](./class08.md)  |
+|class09 | [class09](./class09.md)  |
+|class10 | [class10](./class10.md)  |
+|class11 | [class11](./class11.md)  |
+|class12 | [class12](./class12.md)  |
