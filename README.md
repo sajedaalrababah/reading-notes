@@ -26,3 +26,4 @@ This website is a README NOTES to store information about many readings and summ
 |class10 | [class10](./class10.md)  |
 |class11 | [class11](./class11.md)  |
 |class12 | [class12](./class12.md)  |
+|class13 | [class13](./class13.md)  |
