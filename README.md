@@ -30,3 +30,4 @@ This website is a README NOTES to store information about many readings and summ
 |class14 | [class14](./class14.md)  |
 |class15 | [class15](./class15.md)  |
 |class16 | [class16](./class16.md)  |
+|class26 | [class26](./class26.md)  |
