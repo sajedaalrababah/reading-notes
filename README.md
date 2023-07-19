@@ -31,3 +31,8 @@ This website is a README NOTES to store information about many readings and summ
 |class15 | [class15](./class15.md)  |
 |class16 | [class16](./class16.md)  |
 |class26 | [class26](./class26.md)  |
+|class27 | [class27](./class27.md)  |
+|class28 | [class28](./class28.md)  |
+|class29| [class29](./class20.md)  |
+|class30 | [class30](./class30.md)  |
+
