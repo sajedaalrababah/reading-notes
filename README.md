@@ -39,5 +39,5 @@ This website is a README NOTES to store information about many readings and summ
 |class32 | [class32](./class32.md)  |
 |class33 | [class33](./class33.md)  |
 
-
+|class34 | [class34](./class34.md)  |
 
