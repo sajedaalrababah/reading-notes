@@ -1,29 +1,55 @@
-# Class 37 - React 
+# Class 38 - React II
 
-## In the context of ES6 Syntax and Feature Overview, what are three key features introduced in ES6 that improve upon the previous version of JavaScript, and briefly explain their benefits?
+## How does lifting state up in a React application help with managing data flow and what are the benefits of using this approach?
 
-the three key features are:
+Sometimes, you want the state of two components to always change together. To do it, remove state from both of them, move it to their closest common parent, and then pass it down to them via props. This is known as lifting state up, and it’s one of the most common things you will do writing React code.
 
-- let and const:
-  - let is the new var, it allows us to declare variables that are limited in scope to the block, statement, or expression on which it is used.
-  - const is for declaring variables that are read-only references to a value.
+The main benefit of this approach is that you can share the state between several components. This way, you can make sure that the state of all components is always in sync.
 
-- Arrow functions: they are shorter and cleaner than regular functions, and they don't bind their own this value.
+## Explain the concept of conditional rendering in React and provide an example of how to implement it in a component
 
-- Modules: they allow us to split our code into multiple files.
+Your components will often need to display different things depending on different conditions. In React, you can conditionally render JSX using JavaScript syntax like if statements, &&, and ? : operators.
 
-## After reading “Tailwind in 15 minutes,” can you describe the purpose of utility classes in Tailwind CSS and provide an example of how to use them to style an HTML element?
+```JS
+function UserGreeting(props) {
+  return <h1>Welcome back!</h1>;
+}
 
-utility classes are classes that are used to style an element, they are used to apply a single property to an element, for example if we want to apply a margin to an element we can use the class `m-4` which will apply a margin of 1rem to the element.
+function GuestGreeting(props) {
+  return <h1>Please sign up.</h1>;
+}
 
-## Based on “Why to use Next.js,” explain the main advantages of using Next.js for web development, and provide a brief comparison between traditional client-side rendering and Next.js’s server-side rendering approach
+function Greeting(props) {
+  const isLoggedIn = props.isLoggedIn;
+  if (isLoggedIn) {
+    return <UserGreeting />;
+  }
+  return <GuestGreeting />;
+}
+```
 
-- **Background**: Next.js is a framework built on top of React that abstracts away complexity while providing the flexibility to build scalable React applications. It allows you to choose whether to render on the client or the server, and it supports different data fetching strategies.
+in this example, we have a function that takes a prop called isLoggedIn, and if it's true, it will return the UserGreeting component, and if it's false, it will return the GuestGreeting component.
 
-- **Performance**: Next.js simplifies building performant React applications by handling performance optimizations, such as code splitting, minifying JavaScript, prefetching assets, and caching builds. It also includes webpack optimizations and plugins to improve performance out of the box.
+## What are the main principles behind “Thinking in React” and how do they guide the process of designing and building a React application?
 
-- **Developer Experience**: Next.js offers a great developer experience with features like React Fast Refresh, which preserves React state during development, making the development process smoother. Next.js also includes many features by default, such as TypeScript support, image optimization, and CSS/Sass support, reducing the need for additional configuration or plugins.
+The main principles behind “Thinking in React” are:
 
-- **Deployment**: Although Next.js is commonly deployed on Vercel, it can be hosted on any server with Node.js. It also supports generating static sites using the next export command, allowing deployment to platforms like GitHub Pages. Next.js provides features like redirects and rewrites to enable incremental adoption and easy integration with existing applications.
+- Start With A Mock:
 
-- **Community**: Next.js has a thriving community, including a dedicated team of developers and collaboration with engineers from Google and the React core team at Facebook. It is used in production by major companies and has an active community on GitHub. The growing community adoption and support contribute to the framework's development and future direction.
+    Imagine that you already have a JSON API and a mockup from a designer.
+- Break the UI into a component hierarchy
+
+    The first thing you’ll want to do is to draw boxes around every component (and subcomponent) in the mock and give them all names.
+
+- Build a static version in React
+
+    The easiest way is to build a version that takes your data model and renders the UI but has no interactivity.
+- Find the minimal but complete representation of UI state
+
+    To make your UI interactive, you need to be able to trigger changes to your underlying data model. React achieves this with state.
+- Identify where your state should live
+
+    React is all about one-way data flow down the component hierarchy. It may not be immediately clear which component should own what state.
+- Add inverse data flow
+
+    React doesn’t require a special API to implement this. Components can simply pass callbacks as props to child components, and child components can call those functions directly.
